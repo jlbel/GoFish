@@ -57,6 +57,7 @@ namespace GoFish
                 hand.Add(stock.Deal(0));
             }
         }
+
         /// <summary>
         /// If I have any cards that match the value, return them. If I run out of cards, get
         /// the next hand from the deck.
@@ -76,6 +77,7 @@ namespace GoFish
 
             return matchingCards;
         }
+
         /// <summary>
         ///  When the player receives cards from another player, adds them to the hand
         /// and pulls out any matching books
@@ -113,9 +115,5 @@ namespace GoFish
                                                     .First();
 
         public override string ToString() => Name;
-        
-
-
-
     }
 }

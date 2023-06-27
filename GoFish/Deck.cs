@@ -31,7 +31,7 @@ namespace GoFish
             RemoveAt(index);
             return cardToDeal;
         }
-        public void Shuffle()
+        public Deck Shuffle()
         {
             List<Card> copy = new List<Card>(this);
             Clear();
@@ -42,6 +42,7 @@ namespace GoFish
                 copy.RemoveAt(index);
                 Add(card);
             }
+            return this;
         }
         public void Sort()
         {

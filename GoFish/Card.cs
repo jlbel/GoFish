@@ -20,6 +20,5 @@ namespace GoFish
             get { return ($"{Value} of {Suit}"); }
         }
         public override string ToString() => Name;
-        
     }
 }
